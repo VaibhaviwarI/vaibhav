@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Appointment Scheduling</title>
+    <style>
+        body{
+            background-image: url(ZTUkvW.webp);
+            align-items:center;
+            color: black;
+            background-size: cover;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+
+    
+        }
+        div{
+            padding:content;
+          
+        }
+        form{
+            text-align:center;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        select,
+        input[type="date"],
+        input[type="time"] {
+            width: 100%;
+            /*padding: 10px;*/
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"],input[type="reset"] {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        }
+
+        input[type="submit"]:hover,input[type="reset"]:hover {
+            background-color: #0056b3;
+            cursor:pointer;
+            color: blue;
+            transform:scale(1.5);
+        }
+
+        h1{
+            text-align: center;
+            
+        }
+        h3{
+            text-align: center;
+        }
+        input[type="radio"]{
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .header{
+            padding:1rem 9%;
+            position:fixed;
+            top:0;left:0;right:0;
+            z-index:1000;
+            box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+            display:flex;
+            justify-content:space-between;
+            background: #fff;
+        }
+        .header a{
+            font-size:1.7rem
+        }
+        .header .navbar a{
+            font-size:1.7rem;
+            color:var(--light-color);
+            margin-left:2rem;
+        }
+        .header .navbar a:hover{
+            color:green;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header class = "header">
+        <a><i class = "fa fa-heartbeat"></i>UNI HOSPITAL</a>
+        <nav class = "navbar">
+            <a href = "#home">HOME</a>
+            <a href = "#about">ABOUT</a>
+            <a href = "#doctors">DOCTORS</a>
+            <a href = "#book">BOOK APPOINTMENT</a>
+        </nav>
+    </header><br><br>
+    <div>
+        <h3>Medical Appointment Scheduling</h3>
+    <form id="appointmentForm"  method="post">
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName" required><br><br>
+        
+        <label for="doctor">Doctor:</label>
+        <select id="doctor" name="doctor">
+            <option value="Select">Select</option>
+            <option value="Dr. Smith">Dr. Smith</option>
+            <option value="Dr. Johnson">Dr. Johnson</option>
+            <option value="Dr. Dixon">Dr. Dixon</option>
+            <option value="Dr. Grimes">Dr. Grimes</option>
+        </select><br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required><br><br>
+        <label for="gender" id="gender" name="gender">Gender:</label>
+        <input type="radio" value="male">Male<br>
+        <input type="radio" value="female">Female<br>
+        <input type="radio" value="other">Other<br><br>
+        <label for="age" id="age" name="age">Age:</label>
+        <input type="number" placeholder="Enter your age"><br>
+        <br><br>
+
+        <input type="submit" value="Schedule Appointment"><br>
+        <br>
+        <input type="reset">
+        <h2></h2>
+    </form>
+    </div>
+    <footer>
+        &copy; 2023 Medical Appointment Scheduling
+    </footer>
+
+</body>
+</html>

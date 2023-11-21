@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(blue.png);
+            align-items:center;
+            color:gold;
+            
+    
+        }
+        div{
+            padding:content;
+          
+        }
+        form{
+            text-align:center;
+          
+        }
+        label{
+            display:block;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover{
+            background-color: hotpink;
+            cursor:pointer;
+            color: blue;
+            transform:scale(1.5);
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+    <form>
+        <h2>Don't have an account? Want to join us</h2>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="First Name Last Name" id="name"><br>
+        <label for="age" >Age:</label>
+        <input type="number" placeholder="Enter your age" id="age"><br>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter email" id="email"><br>
+        <label for="address">Address:</label>
+        <textarea name="" id="address" rows="5" columns="30"></textarea><br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" value="male" name="gender">Male<br>
+        <input type="radio" value="female" name="gender">Female<br>
+        <select name="cities" value="cities">
+            <option value="Select">Select</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Rewari in Rajasthan">Rewari in Rajasthan</option>
+            <option value="Punjab">Punjab</option>
+        </select><br>
+        <label for="password">Password</label>
+        <input type="password" name="password"><br>
+        <label for="upload">Upload File:</label>
+        <input type="file" name="file"><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    </div>
+</body>
+</html>
